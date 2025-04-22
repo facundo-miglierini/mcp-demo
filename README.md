@@ -21,7 +21,7 @@ cd mcp-demo
 
 2. Instalar las dependencias con **uv**:
 ```bash
-uv install
+uv build
 uv venv
 ```
 
