@@ -6,9 +6,6 @@ from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 
 from tavily_client import agent
 
-import nest_asyncio
-nest_asyncio.apply()
-
 st.title("MCP agent")
 
 if "messages" not in st.session_state:
