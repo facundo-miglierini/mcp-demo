@@ -9,6 +9,7 @@ Este cliente MCP utiliza **uv** como gestor de paquetes para instalar sus depend
 ## Requisitos previos
 
 - Tener instalado **uv** package manager: https://docs.astral.sh/uv/getting-started/installation/
+- Tener instalado **node**: https://nodejs.org/en/download
 
 ## Instalación del Cliente MCP
 
