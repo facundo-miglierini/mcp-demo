@@ -39,7 +39,7 @@ npm run build
 
 ## Uso
 
-Dentro de la carpeta del cliente MCP, activar el virtual environment:
+Dentro de la carpeta del cliente MCP, activar el entorno virtual:
 
 ```bash
 source .venv/bin/activate
@@ -47,7 +47,7 @@ source .venv/bin/activate
 
 ### Streamlit 
 
-Puede interactuarse desde una interfaz provista por Streamlit ejecutando el siguiente comando:
+Puede interactuarse desde una interfaz provista por Streamlit:
 ```bash
 python -m streamlit run src/streamlit.py
 ```
