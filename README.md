@@ -21,6 +21,7 @@ cd mcp-demo
 2. Instalar las dependencias con **uv**:
 ```bash
 uv install
+uv venv
 ```
 
 ## Instalación del Servidor MCP
@@ -38,9 +39,15 @@ npm run build
 
 ## Uso
 
+Dentro de la carpeta del cliente MCP, activar el virtual environment:
+
+```bash
+source .venv/bin/activate
+```
+
 ### Streamlit 
 
-Puede interactuarse desde una interfaz provista por Streamlit ejecutando el siguiente comando dentro de la carpeta del cliente MCP:
+Puede interactuarse desde una interfaz provista por Streamlit ejecutando el siguiente comando:
 ```bash
 python -m streamlit run src/streamlit.py
 ```
