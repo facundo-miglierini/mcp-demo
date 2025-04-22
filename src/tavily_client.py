@@ -69,7 +69,7 @@ async def run():
 
             while msg != "quit":
                 msg = input("USER PROMPT (quit): ")
-                agent_response = await agent.ainvoke({"messages": "Qué contiene el siguiente link? https://github.com/varunneal/spotify-mcp"})
+                agent_response = await agent.ainvoke({"messages": msg})
                 print(f"AGENT RESPONSE: {agent_response['messages'][-1].content}")
 
 
