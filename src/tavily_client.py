@@ -22,11 +22,8 @@ async def run():
             # Get tools
             tools = await load_mcp_tools(session)
 
-            # Get prompt
-            prompt = "You are a Tavily agent."
-
             # Create and run the agent
-            agent = create_react_agent(model, tools, prompt=prompt)
+            agent = create_react_agent(model, tools)
             #agent_response = await agent.ainvoke({"messages": "Cuándo se elige el nuevo papa?"})
             agent_response = await agent.ainvoke({"messages": "Qué contiene el siguiente link? https://github.com/varunneal/spotify-mcp"})
             print(f"AGENT RESPONSE: {agent_response['messages'][-1].content}")
