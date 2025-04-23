@@ -11,6 +11,20 @@ Este cliente MCP utiliza **uv** como gestor de paquetes para instalar sus depend
 - Tener instalado **uv** package manager: https://docs.astral.sh/uv/getting-started/installation/
 - Tener instalado **node**: https://nodejs.org/en/download
 
+## Instalación del Servidor MCP
+
+1. Clonar el repositorio del servidor. En este caso, Tavily AI:
+```bash
+git clone git@github.com:tavily-ai/tavily-mcp.git
+cd tavily-mcp
+```
+
+2. Compilar el código del servidor:
+```bash
+npm install
+npm run build
+```
+
 ## Instalación del Cliente MCP
 
 1. Clonar este repositorio:
@@ -25,18 +39,15 @@ uv build
 uv venv
 ```
 
-## Instalación del Servidor MCP
-
-1. Clonar el repositorio del servidor. En este caso, Tavily AI:
-```bash
-git clone git@github.com:tavily-ai/tavily-mcp.git
-cd tavily-mcp
+3. Modificar la variable *server_params* con los siguientes valores:
+```python
+server_params = StdioServerParameters(
+    command="node",
+    args=["/{SERVER_DIR}/tavily-mcp/build/index.js"]
+)
 ```
 
-2. Compilar el código del servidor:
-```bash
-npm run build
-```
+Donde *SERVER_DIR* es el directorio donde se encuentra el Servidor MCP instalado.
 
 ## Uso
 
