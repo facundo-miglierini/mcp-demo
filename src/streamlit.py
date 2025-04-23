@@ -5,7 +5,7 @@ import sys
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 
-from tavily_client import agent
+from client import agent
 
 st.title("MCP agent")
 

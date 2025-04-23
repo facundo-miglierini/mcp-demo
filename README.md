@@ -11,18 +11,26 @@ Este cliente MCP utiliza **uv** como gestor de paquetes para instalar sus depend
 - Tener instalado **uv** package manager: https://docs.astral.sh/uv/getting-started/installation/
 - Tener instalado **node**: https://nodejs.org/en/download
 
-## Instalación del Servidor MCP
+## Instalación del Servidor MCP Tavily
 
-1. Clonar el repositorio del servidor. En este caso, Tavily AI:
+Clonar el repositorio del servidor. En este caso, Tavily AI:
 ```bash
-git clone git@github.com:tavily-ai/tavily-mcp.git
-cd tavily-mcp
+https://github.com/tavily-ai/tavily-mcp
 ```
 
-2. Compilar el código del servidor:
+
+## Instalación del Servidor MCP Google Calendar
+
+Clonar el repositorio del servidor. En este caso, Google Calendar:
 ```bash
-npm install
-npm run build
+https://github.com/nspady/google-calendar-mcp
+```
+
+## Instalación del Servidor MCP Spotify
+
+Clonar el repositorio del servidor. En este caso, Spotify:
+```bash
+https://github.com/varunneal/spotify-mcp
 ```
 
 ## Instalación del Cliente MCP
