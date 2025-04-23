@@ -12,7 +12,7 @@ from models import model
 
 server_params = StdioServerParameters(
     command="node",
-    args=["/home/facundo/tavily-mcp/build/index.js"]
+    args=["C:\\Users\\Acer\\Desktop\\Snoop\\tavily-mcp\\build\\index.js"]
 )
 
 class TavilyAgent:

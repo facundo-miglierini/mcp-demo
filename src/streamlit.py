@@ -1,5 +1,6 @@
 import streamlit as st
 import time
+import sys
 
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
@@ -46,5 +47,9 @@ async def run():
 
 if __name__ == "__main__":
     import asyncio
+
+    if 'win32' in sys.platform:
+        # Windows specific event-loop policy & cmd
+        asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
     asyncio.run(run())
