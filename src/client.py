@@ -1,12 +1,8 @@
 from langchain_core.runnables.config import RunnableConfig
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph.graph import CompiledGraph
-from mcp import ClientSession, StdioServerParameters
 
-from mcp.client.stdio import stdio_client
-
-from langchain_mcp_adapters.client import MultiServerMCPClient, StdioConnection, TypedDict
-from langchain_mcp_adapters.tools import load_mcp_tools
+from langchain_mcp_adapters.client import MultiServerMCPClient, StdioConnection
 from langgraph.prebuilt import create_react_agent
 
 from models import model
@@ -38,15 +34,6 @@ spotify_server_params: StdioConnection = {
     "encoding_error_handler": "replace"
 }
 
-"""
-    "command": "uv",
-    "args": [
-      "--directory",
-      "/path/to/spotify_mcp",
-      "run",
-      "spotify-mcp"
-    ],
-    """
 
 class Agent:
     def __init__(self):
