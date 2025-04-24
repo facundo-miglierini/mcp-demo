@@ -13,7 +13,7 @@ from models import model
 
 calendar_server_params: StdioConnection = {
     "command": "node",
-    "args": ["C:\\Users\\Lenovo\\Desktop\\Work\\mcp\\servers\\google-calendar-mcp\\build\\index.js"],
+    "args": ["/home/facundo/google-calendar-mcp/build/index.js"],
     "transport": "stdio",
     "env": None,
     "encoding": "utf-8",
@@ -22,7 +22,7 @@ calendar_server_params: StdioConnection = {
 
 tavily_server_params: StdioConnection = {
     "command": "node",
-    "args": ["C:\\Users\\Lenovo\\Desktop\\Work\\mcp\\servers\\tavily-mcp\\build\\index.js"],
+    "args": ["/home/facundo/tavily-mcp/build/index.js"],
     "transport": "stdio",
     "env": None,
     "encoding": "utf-8",
@@ -31,7 +31,7 @@ tavily_server_params: StdioConnection = {
 
 spotify_server_params: StdioConnection = {
     "command": "uv",
-    "args": ["--directory", "C:\\Users\\Lenovo\\Desktop\\Work\\mcp\\servers\\spotify-mcp\\src\\spotify_mcp", "run", "spotify-mcp"],
+    "args": ["--directory", "/home/facundo/spotify_mcp", "run", "spotify-mcp"],
     "transport": "stdio",
     "env": None,
     "encoding": "utf-8",
